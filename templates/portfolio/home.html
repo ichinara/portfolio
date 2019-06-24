@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ichinara Editora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!--mobile res-->
+    <link rel="stylesheet" type="text/css" href="../../static/semantic/semantic.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../../static/css/style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src='../../static/js/main.js'></script>  
+    <link href='simplelightbox.min.css' rel='stylesheet' type='text/css'>
+    <script src="../../static/semantic/semantic.min.js"></script>
+
+</head>
+
+   <style>
+
+        .corte{
+            width: 25%;
+            height: 50%;
+            overflow:hidden;
+            float: left;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+        .corte img{
+            width: 100%;
+        }
+
+        
+    </style>
+
+
+
+
+<body>
+    <div id='content'>
+        <div id="gallery-content">
+
+            <img src="../../media/arqueiroapoiado.png" alt="" title="" />
+            <div class="gallery" id="album"></div>
+        </div>
+
+
+        <div id='sticker'>
+            <img src="../../media/geralt.png" id="tablet" alt="Tablet e celular com uma imagem do jogo The Witcher 3" title="Yennefer e Geralt de Witcher 3"/>
+            <ul>
+                <li>Stickers</li>
+                <li>Papeis de parede</li>
+                <li>Limpeza de fundo</li>
+                <li>Tratamento de foto</li>
+                <li>Recorte para ícone</li>
+            </ul>
+        </div>
+        
+        <div>
+            <img src="../../media/pins.png" id="pins" alt="Imagens circulas com efeitos diferentes de cor" title="Tratamento de Imagem"/>
+        </div>
+
+        <div id='funciona'>
+            <div>
+                <h2>Como funciona?</h2>
+                <p>Preencha o formulário e aguarde até dois dias para receber o retorno! Você poderá pagar via PicPay ou cartão de crédito pelo PayPal.</p>
+                <p>Os projetos geralmente demoram 7 dias para serem entregues e caso a demanda for pequena o prazo pode ser antecipado.</p>
+                <a href="https://forms.gle/ph1Sck61wKcUYabE8" target="_blank" class="purchase">
+                    <img src="../../media/cart.png" id="cart" alt="" title=""/>
+                </a>
+            </div>
+            <img src="../../media/mistica2.png" alt="" title=""/>
+        </div>
+    </div>    
+    <div id='footer'>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="simple-lightbox.js"></script>
+    <script>
+    $(function(){
+        var $gallery = $('.gallery a').simpleLightbox();
+
+        $gallery.on('show.simplelightbox', function(){
+            console.log('Requested for showing');
+        })
+        .on('shown.simplelightbox', function(){
+            console.log('Shown');
+        })
+        .on('close.simplelightbox', function(){
+            console.log('Requested for closing');
+        })
+        .on('closed.simplelightbox', function(){
+            console.log('Closed');
+        })
+        .on('change.simplelightbox', function(){
+            console.log('Requested for change');
+        })
+        .on('next.simplelightbox', function(){
+            console.log('Requested for next');
+        })
+        .on('prev.simplelightbox', function(){
+            console.log('Requested for prev');
+        })
+        .on('nextImageLoaded.simplelightbox', function(){
+            console.log('Next image loaded');
+        })
+        .on('prevImageLoaded.simplelightbox', function(){
+            console.log('Prev image loaded');
+        })
+        .on('changed.simplelightbox', function(){
+            console.log('Image changed');
+        })
+        .on('nextDone.simplelightbox', function(){
+            console.log('Image changed to next');
+        })
+        .on('prevDone.simplelightbox', function(){
+            console.log('Image changed to prev');
+        })
+        .on('error.simplelightbox', function(e){
+            console.log('No image found, go to the next/prev');
+            console.log(e);
+        });
+    });
+</script>
+
+
+    <script>
+        q_fotos = 9
+        link_pasta = "../../media"
+
+        for(i=1;i<q_fotos;i++){
+            album.innerHTML += "<div class='corte'><a href='"+link_pasta+"/("+i+").jpg'><img src='"+link_pasta+"/("+i+").jpg' ></a></div>"
+        }   
+
+    </script>
+
+
+
+</body>
+
+<footer class="ui grid centered">
+    <div class="four wide columns">
+        <div class="two wide columns">
+            <i class="user secret icon"></i>ichinaraeditora@gmail.com
+        </div>
+        <div class="two wide columns"></div>
+    </div>
+    <div class="four wide columns" id="credito">
+        <div class="two wide columns">
+            Feito com a ajuda de:
+            <i class="github alternate icon"></i>github.com/hatatori
+        </div>
+     </div>    
+</footer>
+
+
+</html>
