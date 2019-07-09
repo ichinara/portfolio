@@ -1,4 +1,8 @@
+EN
 https://ichinara.github.io/portfolio/templates/home.html
+
+PT
+https://ichinara.github.io/portfolio/templates/inicio.html
 
 Acesse o site acima e veja meu portfolio! 
 Para mais informações ou para iniciar um projeto envie um email para ichinaraeditora@gmail.com ou envie uma mensagem via Telegram para @Ichinara.
