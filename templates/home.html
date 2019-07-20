@@ -15,29 +15,6 @@
 
 </head>
 
-   <style>
-
-        .corte{
-            width: 25%;
-            height: 50%;
-            overflow:hidden;
-            float: left;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            
-
-        }
-        .corte img{
-            width: 100%;
-        }
-
-        
-    </style>
-
-
-
-
 <body>
     <div id='content'>
         <div id="gallery-content">
@@ -57,7 +34,7 @@
                 <li>Social media avatars</li>
             </ul>
         </div>
-        
+
         <div>
             <img src="../media/pins.png" id="pins" alt="Rounded images with different collors effects" title="Photo Manipulation"/>
         </div>
@@ -73,7 +50,7 @@
             </div>
             <img src="../media/mistica2.png" alt="female character from Black Desert Online" title=""/>
         </div>
-    </div>    
+    </div>
     <div id='footer'>
 
     </div>
@@ -135,7 +112,7 @@
 
         for(i=1;i<q_fotos;i++){
             album.innerHTML += "<div class='corte'><a href='"+link_pasta+"/("+i+").jpg'><img src='"+link_pasta+"/("+i+").jpg' ></a></div>"
-        }   
+        }
 
     </script>
 
@@ -151,11 +128,12 @@
         <div class="two wide columns"></div>
     </div>
     <div class="four wide columns" id="credito">
-        <div class="two wide columns">
-            Made with help from:
-            <i class="github alternate icon"></i>github.com/hatatori
+        <div class="two wide columns text-right">
+            Made with help from: <br />
+            <i class="github alternate icon"></i>github.com/hatatori<br />
+            <i class="github alternate icon"></i>github.com/larissathasdefar
         </div>
-     </div>    
+     </div>
 </footer>
 
 
